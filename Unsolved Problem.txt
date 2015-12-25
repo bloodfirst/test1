@@ -1,0 +1,19 @@
+mysite中存在以下问题，testapp中同样存在该问题。
+现在主要在testapp中测试，通过后再推广至mysite。
+
+下一步需要了解一下apache的配置。
+了解nginx(适合静态资源用)。
+gunicorn
+uwsgi
+
+
+使用mod_wsgi/apache将django项目发布时出现500 internal server error问题
+
+使用test.wsgi测试时可以通过
+
+参考文章：（相关参考见temp收藏夹）
+http://blog.csdn.net/hitxiaya/article/details/6596499（按照文章可顺利完成）
+
+http://www.cnblogs.com/JeffreySun/archive/2010/01/11/1612155.html（会出现500 错误，原因未明，apache/log/error.log中仅显示notice/warn，未显示error）
+
+C:\Python27\Lib\site-packages\Django-1.8-py2.7.egg\django\core\handlers   base.py中添加了显示错误的代码，但未起作用
